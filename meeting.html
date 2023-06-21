@@ -63,11 +63,23 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-white">
     <p><b>Jitsi-Meet</b></p>
     <p class="w3-opacity">Moderated Meetings</p>
-    <iframe src="https://calendar.google.com/calendar/embed?src=942c9c11dc565e40eeecdff709443a7096bcae15a108487c751eebc9b75297e6%40group.calendar.google.com&ctz=Asia%2FYangon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <button onclick="myAccFunc('p1')" class="w3-button w3-left-align w3-blue">Create Calendar Event +</button>
+    <div id="p1" class="w3-hide">
+      <br>
+      <div class="w3-container w3-text-grey">
+        <iframe src="https://calendar.google.com/calendar/" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        <!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FYangon&showCalendars=0&showPrint=1&showNav=1&src=OTQyYzljMTFkYzU2NWU0MGVlZWNkZmY3MDk0NDNhNzA5NmJjYWUxNWExMDg0ODdjNzUxZWViYzliNzUyOTdlNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubW0jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23795548&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+      </div>
+  </div>
+  <br><p></p>
+  <div class="w3-container">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FYangon&showCalendars=0&showPrint=1&showNav=1&src=OTQyYzljMTFkYzU2NWU0MGVlZWNkZmY3MDk0NDNhNzA5NmJjYWUxNWExMDg0ODdjNzUxZWViYzliNzUyOTdlNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubW0jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23795548&color=%230B8043" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+  
     <p>Jitsi moderated meetings is a feature that lets you book a meeting URL in advance where you are the only moderator.</p>
     <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get the Meetings</button>
   </div>
-  https://meet.jit.si/
+  <!-- https://meet.jit.si/ -->
 
   <div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -76,10 +88,8 @@ body {font-family: "Lato", sans-serif}
        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Jitsi-Meet</h2>
       </header>
-      <div class="w3-container">
-
-        ifram or embed this (https://moderated.jitsi.net/)
-        
+      <div class="w3-container w3-center">
+        <iframe src="https://moderated.jitsi.net/" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
         <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
       </div>
@@ -137,6 +147,15 @@ var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+}
+// click-view/ id hide
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
   }
 }
 </script>
