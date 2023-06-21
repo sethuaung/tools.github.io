@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 <!-- Favicons -->
 <link href="images/logo/favicon_fe.ico" rel="icon">
 <link href="images/logo/favicon512x512.jpg" rel="felix-logo">
@@ -15,6 +16,16 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
+<!-- note taker -->
+<script src="js/jquery-3.3.1.slim.min.js">
+</script>
+
+<script src="js/popper.min.js">
+</script>
+
+<script src="bootstrap/bootstrap.min.js">
+</script>
+
 </head>
 <body>
 
@@ -51,6 +62,33 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Start Here -->
+  <div class="container my-3">
+    <h1>Note-Taker</h1>
+    <p>Take your Notes here. </p>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">
+                Add a Daily Note
+
+            </h5>
+            <div class="form-group">
+                <textarea class="form-control" id="addTxt" rows="3">
+                </textarea>
+            </div>
+            <button class="btn btn-primary" id="addBtn" style="background-color:blue">
+                Add Note
+            </button>
+        </div>
+    </div>
+    <hr>
+    <h1>Your Notes</h1>
+    <hr>
+
+    <div id="notes" class="row container-fluid">
+    </div>
+</div>
+
+<script src="js/notetaker.js"></script>
 
   
 <!-- End Page Content -->
