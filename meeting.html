@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Felixent :: Utilities. </title>
+<title>Felixent :: Jitsi Meet </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -51,7 +51,34 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Start Here -->
+  <!-- Jitsi Meet -->
+  <div class="w3-container w3-white">
+    <p><b>Jitsi-Meet</b></p>
+    <p class="w3-opacity">Moderated Meetings</p>
+    <iframe src="https://calendar.google.com/calendar/embed?src=942c9c11dc565e40eeecdff709443a7096bcae15a108487c751eebc9b75297e6%40group.calendar.google.com&ctz=Asia%2FYangon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <p>Jitsi moderated meetings is a feature that lets you book a meeting URL in advance where you are the only moderator.</p>
+    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get the Meetings</button>
+  </div>
+  https://meet.jit.si/
 
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Jitsi-Meet</h2>
+      </header>
+      <div class="w3-container">
+
+        ifram or embed this (https://moderated.jitsi.net/)
+        
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+ <!-- END Jitsi Meet -->
+ 
   
 <!-- End Page Content -->
 </div>
