@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 /**
 
-Author: Codingscape
-Watch Full Tutorial: https://www.youtube.com/watch?v=V4uAzjh9l7Y
-Subscribe for More: https://www.youtube.com/c/codingscape?sub_confirmation=1
+Author: mosquito
 
 **/
 
@@ -20,7 +18,7 @@ body{
     align-items: center;
     margin: auto;
     height: 100vh;
-    background: #961251;
+    background: #f1f1f1;
     font-family: 'Poppins', sans-serif;
 }
 
