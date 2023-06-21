@@ -11,10 +11,13 @@
 <!-- Favicons -->
 <link href="images/logo/favicon_fe.ico" rel="icon">
 <link href="images/logo/favicon512x512.jpg" rel="felix-logo">
+<!-- expense css -->
+<link rel="stylesheet" href="css/expense.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
+
 </head>
 <body>
 
@@ -51,7 +54,49 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Start Here -->
+  <div class="w3-container">
+    <h2>Expense Tracker.</h2>
 
+  <div class="container">
+    <h4>Your Balance</h4>
+    <h1 id="balance">MMK0.00</h1>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">+MMK0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">-MMK0.00</p>
+      </div>
+    </div>
+
+    <h3>History</h3>
+    <ul id="list" class="list">
+      <!-- <li class="minus">
+        Cash <span>-MMK400</span><button class="delete-btn">x</button>
+      </li> -->
+    </ul>
+
+    <h3>Add new transaction</h3>
+    <form id="form">
+      <div class="form-control">
+        <label for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter text..." />
+      </div>
+      <div class="form-control">
+        <label for="amount"
+          >Amount <br />
+          (negative - expense, positive - income)</label
+        >
+        <input type="number" id="amount" placeholder="Enter amount..." />
+      </div>
+      <button class="btn">Add transaction</button>
+    </form>
+  </div>
+  <script src="js/expense.js"></script>
+</div>
   
 <!-- End Page Content -->
 </div>
