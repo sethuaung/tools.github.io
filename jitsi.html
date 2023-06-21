@@ -58,25 +58,18 @@ body {font-family: "Lato", sans-serif}
 <!-- Start Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <!-- Jitsi Meet API -->
-<script src="https://meet.jit.si/external_api.js"></script>
-<script>  
-// Jitsi UI
-var domain = "meet.jit.si";
-      var options = {
-          roomName: "Felixent-JitsiMeet",
-          width: 700,
-          height: 600,
-          parentNode: undefined,
-          configOverwrite: {},
-          interfaceConfigOverwrite: {}
-      }
-      var api = new JitsiMeetExternalAPI(domain, options);
-</script>
+<div class="w3-content">
+  
+<!-- <script src="https://meet.jit.si/external_api.js"></script> -->
+<h1>Jitsi-Meet</h1>
+<iframe src="https://meet.jit.si/FelixentJitsiMeet" allow="microphone;camera" style="border:solid 1px #777" width="100%" height="600" frameborder="0"></iframe>
+
+</div>
 <!-- Jitsi Meet API END -->
-  <h1>Jitsi-Meet</h1>
+  
 <br><hr>
 <!-- Readme insert -->
-  <div class="w3-container w3-text-grey">
+  <div class="w3-content w3-text-grey">
     <h1><p class="w3-center">Jitsi Meet</p></h1>
     <p>Jitsi Meet is a set of Open Source projects which empower users to use and deploy
     video conferencing platforms with state-of-the-art video quality and features.</p>
