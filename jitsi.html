@@ -57,13 +57,11 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Start Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
   <!-- Jitsi Meet API -->
-  <h1>Jitsi-Meet</h1>
-  <p></p>
-  <script src="https://meet.jit.si/external_api.js"></script>
-  <script>
-      var domain = "meet.jit.si";
+<script src="https://meet.jit.si/external_api.js"></script>
+<script>  
+// Jitsi UI
+var domain = "meet.jit.si";
       var options = {
           roomName: "Felixent-JitsiMeet",
           width: 700,
@@ -73,12 +71,11 @@ body {font-family: "Lato", sans-serif}
           interfaceConfigOverwrite: {}
       }
       var api = new JitsiMeetExternalAPI(domain, options);
-  </script>
+</script>
+<!-- Jitsi Meet API END -->
+  <h1>Jitsi-Meet</h1>
 <br><hr>
 <!-- Readme insert -->
-<button onclick="myAccFunc('p2')" class="w3-button w3-left-align w3-blue">Documentation</button>
-<div id="p2" class="w3-hide">
-  <br>
   <div class="w3-container w3-text-grey">
     <h1><p class="w3-center">Jitsi Meet</p></h1>
     <p>Jitsi Meet is a set of Open Source projects which empower users to use and deploy
@@ -88,9 +85,7 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-center">
     <img src="https://raw.githubusercontent.com/jitsi/jitsi-meet/master/readme-img1.png" width="900" />
     </p>
-    
     <hr />
-    
     <p>Amongst others here are the main features Jitsi Meet offers:</p>
     <ul>
     <li>Support for all current browsers</li>
@@ -139,7 +134,7 @@ body {font-family: "Lato", sans-serif}
 </div>
 <br><p></p>
 <!-- Readme insert End-->
-  
+
 <!-- End Page Content -->
 </div>
 
@@ -169,13 +164,6 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
 
 </body>
