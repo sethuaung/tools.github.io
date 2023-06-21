@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Felixent :: Utilities. </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/favicon_fe.ico" rel="icon">
+<link href="images/logo/favicon512x512.jpg" rel="felix-logo">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+    <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="meeting.html" class="w3-bar-item w3-button">Meets</a>
+        <a href="notes.html" class="w3-bar-item w3-button">Notes</a>
+        <a href="expense.html" class="w3-bar-item w3-button">Expense Tracker</a>
+        <a href="ztouni.html" class="w3-bar-item w3-button">Rabbit</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-padding-large" title="MORE">MORE</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="meeting.html" class="w3-bar-item w3-button">Meets</a>
+      <a href="notes.html" class="w3-bar-item w3-button">Notes</a>
+      <a href="expense.html" class="w3-bar-item w3-button">Expense Tracker</a>
+      <a href="ztouni.html" class="w3-bar-item w3-button">Rabbit</a>
+    </div>
+  </div>
+</div>
+
+<!-- Start Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Jitsi Meet API -->
+  <h1>Jitsi-Meet</h1>
+  <p></p>
+  <script src="https://meet.jit.si/external_api.js"></script>
+  <script>
+      var domain = "meet.jit.si";
+      var options = {
+          roomName: "Felixent-JitsiMeet",
+          width: 700,
+          height: 600,
+          parentNode: undefined,
+          configOverwrite: {},
+          interfaceConfigOverwrite: {}
+      }
+      var api = new JitsiMeetExternalAPI(domain, options);
+  </script>
+<br><hr>
+<!-- Readme insert -->
+<button onclick="myAccFunc('p2')" class="w3-button w3-left-align w3-blue">Documentation</button>
+<div id="p2" class="w3-hide">
+  <br>
+  <div class="w3-container w3-text-grey">
+    <h1><p class="w3-center">Jitsi Meet</p></h1>
+    <p>Jitsi Meet is a set of Open Source projects which empower users to use and deploy
+    video conferencing platforms with state-of-the-art video quality and features.</p>
+    <hr />
+    
+    <p class="w3-center">
+    <img src="https://raw.githubusercontent.com/jitsi/jitsi-meet/master/readme-img1.png" width="900" />
+    </p>
+    
+    <hr />
+    
+    <p>Amongst others here are the main features Jitsi Meet offers:</p>
+    <ul>
+    <li>Support for all current browsers</li>
+    <li>Mobile applications</li>
+    <li>Web and native SDKs for integration</li>
+    <li>HD audio and video</li>
+    <li>Content sharing</li>
+    <li>Raise hand and reactions</li>
+    <li>Chat with private conversations</li>
+    <li>Polls</li>
+    <li>Virtual backgrounds</li>
+    </ul>
+    <p>And many more!</p>
+    <h2 id="using-jitsi-meet">Using Jitsi Meet</h2>
+    <p>Using Jitsi Meet is straightforward, as it&#39;s browser based. Head over to <a href="https://meet.jit.si">meet.jit.si</a> and give it a try. It&#39;s anonymous, scalable and free to use. All browsers are supported! </p>
+    <p>Using mobile? No problem, you can either use your mobile web browser or our fully-featured
+    mobile apps:</p>
+    <table>
+    <thead>
+    <tr>
+    <th class="w3-center">Android</th>
+    <th class="w3-center">Android (F-Droid)</th>
+    <th class="w3-center">iOS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="w3-center"><a href="https://play.google.com/store/apps/details?id=org.jitsi.meet"><img src="images/google-play-badge.png" height="50"></a></td>
+    <td class="w3-center"><a href="https://f-droid.org/en/packages/org.jitsi.meet/"><img src="images/f-droid-badge.png" height="50"></a></td>
+    <td class="w3-center"><a href="https://itunes.apple.com/us/app/jitsi-meet/id1165103905"><img src="images/appstore-badge.png" height="50"></a></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="jitsi-as-a-service">Jitsi as a Service</h2>
+    <p>If you like the branding capabilities of running your own instance but you&#39;d like
+    to avoid dealing with the complexity of monitoring, scaling and updates, JaaS might be
+    for you.</p>
+    <p><a href="https://jaas.8x8.vc">8x8 Jitsi as a Service (JaaS)</a> is an enterprise-ready video meeting platform that allows developers, organizations and businesses to easily build and deploy video solutions. With Jitsi as a Service we now give you all the power of Jitsi running on our global platform so you can focus on building secure and branded video experiences.</p>
+    <h2 id="documentation">Documentation</h2>
+    <p>All the Jitsi Meet documentation is available in <a href="https://jitsi.github.io/handbook/">the handbook</a>.</p>
+    <h2 id="security">Security</h2>
+    <p>For a comprehensive description of all Jitsi Meet&#39;s security aspects, please check <a href="https://jitsi.org/security">this link</a>.</p>
+    <p>For a detailed description of Jitsi Meet&#39;s End-to-End Encryption (E2EE) implementation,
+    please check <a href="https://jitsi.org/e2ee-whitepaper/">this link</a>.</p>
+  </div>
+</div>
+<br><p></p>
+<!-- Readme insert End-->
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!-- <img src="images/maps.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.felixent.net" target="_blank">FELIXENT</a></p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
