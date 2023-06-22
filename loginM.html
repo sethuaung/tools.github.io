@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Felixent :: Note Taker </title>
+<title>Felixent :: Login </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 <!-- Favicons -->
 <link href="images/logo/favicon_fe.ico" rel="icon">
 <link href="images/logo/favicon512x512.jpg" rel="felix-logo">
@@ -16,16 +15,6 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
-<!-- note taker -->
-<script src="js/jquery-3.3.1.slim.min.js">
-</script>
-
-<script src="js/popper.min.js">
-</script>
-
-<script src="bootstrap/bootstrap.min.js">
-</script>
-
 </head>
 <body>
 
@@ -71,43 +60,42 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Start Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Start Here -->
-  <div class="container my-3">
-    <h1>Note-Taker</h1>
-    <p>Take your Notes here. </p>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">
-                Add a Daily Note
-
-            </h5>
-            <div class="form-group">
-                <textarea class="form-control" id="addTxt" rows="3">
-                </textarea>
-            </div>
-            <button class="btn btn-primary" id="addBtn" style="background-color:blue">
-                Add Note
-            </button>
-        </div>
+<div class="w3-content" style="max-width:70%;margin-top:60px">
+    <div class="w3-content w3-card-4" style="width: 50%;">
+        <h1 class="w3-text-teal w3-center">Jitsi Meet Login</h1>
+  <div class="w3-card-3 ">
+       <div class="w3-center"><img src="images/logo/favicon512x512.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top"></div><p></p>
+    <form class="w3-container">
+      <div class="w3-section">
+        <label>Username</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+        <label for="pswd">Password</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Type Your Password" id="pswd">
+        <input class="w3-button w3-block w3-green w3-section w3-padding" type="button" value="Login" onclick="checkPswd();" />
+        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+      </div>
+    </form>
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <a href="index.html" class="w3-button w3-red w3-btn">Cancel</a>
+      <span class="w3-right w3-padding w3-hide-small">Forgot <a href="index.html#contact">password?</a></span>
     </div>
-    <hr>
-    <h1>Your Notes</h1>
-    <hr>
-
-    <div id="notes" class="row container-fluid">
-    </div>
-</div>
-
-<script src="js/notetaker.js"></script>
-
-  
+  </div>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "fElixent@1337";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                 window.location="meeting.html";
+            }
+            else{
+                alert("Passwords do not match.");
+            }
+        }
+    </script> 
+    </div> 
 <!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<!-- <img src="images/maps.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+</div><br>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
