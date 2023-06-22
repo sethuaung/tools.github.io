@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Felixent :: Personal Information </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/favicon_fe.ico" rel="icon">
+<link href="images/logo/favicon512x512.jpg" rel="felix-logo">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+    <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="meeting.html" class="w3-bar-item w3-button">Meets</a>
+        <a href="notes.html" class="w3-bar-item w3-button">Notes</a>
+        <a href="expense.html" class="w3-bar-item w3-button">Expense Tracker</a>
+        <a href="ztouni.html" class="w3-bar-item w3-button">Rabbit</a>
+        <a href="loan.html" class="w3-bar-item w3-button">Loan Calculator</a>
+        <a href="clientdata.html" class="w3-bar-item w3-button">DataInput</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="index.html#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-padding-large" title="MORE">MORE</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="meeting.html" class="w3-bar-item w3-button">Meets</a>
+      <a href="notes.html" class="w3-bar-item w3-button">Notes</a>
+      <a href="expense.html" class="w3-bar-item w3-button">Expense Tracker</a>
+      <a href="ztouni.html" class="w3-bar-item w3-button">Rabbit</a>
+      <a href="loan.html" class="w3-bar-item w3-button">Loan Calculator</a>
+      <a href="clientdata.html" class="w3-bar-item w3-button">DataInput</a>
+    </div>
+  </div>
+</div>
+
+<!-- Start Page content -->
+<div class="w3-content" style="max-width:100%;margin-top:50px">
+  <h1>Persoanl Information</h1>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPcFS8RyGXHU0w9mAi6SXF-Bwkoj5CeQP-QmnlNpCHQzvYA/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">
+    <div class="w3-container w3-card-4 w3-light-grey">
+      <div class="w3-third">
+    <label for="date">Payment Date</label>
+    <input class="w3-input w3-border" id="paymentdate" name="entry.555057248" type="date" placeholder="Date" required name="Payment Date">
+      </div>
+      <div class="w3-third">
+    <label for="name">Client Name</label>
+    <input class="w3-input w3-border" id="clientname" name="entry.877592081" type="text" placeholder="Full Name" required name="Client Name">
+      </div>
+      <div class="w3-third">
+    <label for="type">Loan Type</label>
+    <input class="w3-input w3-border" id="loantype" name="entry.637343557" type="text" placeholder="Loan Product Name" required name="Loan Type">
+      </div>
+      <div class="w3-third">
+    <label for="p">Principal</label>
+    <input class="w3-input w3-border" id="principal" name="entry.645331653" type="text" placeholder="Principal" required name="Principal Amount">
+      </div>
+      <div class="w3-third">
+    <label for="i">Interest</label>
+    <input class="w3-input w3-border" id="interest" name="entry.816020009" type="text" placeholder="Interest" required name="Interest Amount">
+      </div>
+        <div class="w3-third">
+    <label for="latefees">Late Amount</label>
+    <input class="w3-input w3-border" id="latefees" name="entry.615602859" type="text" placeholder="Panalty" required name="Late Fees">
+      </div>
+      <div class="w3-third">
+    <label for="p">Remarks</label>
+    <input class="w3-input w3-animate-input" id="remarks" name="entry.1564132072" type="text" placeholder="Other Remarks" required name="Remarks" style="width:30%">
+      </div>
+      <div class="w3-third">
+    <label for="p">Maritial Status</label>
+    <select class="w3-select" id="maritalstatus" name="option">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="entry.1464926660">Married</option>
+        <option value="entry.1464926660">Single</option>
+        <option value="entry.1464926660">Divorced</option>
+    </select>
+      </div>
+      <div class="w3-third">
+    <label for="p">Street Address</label>
+    <input class="w3-input w3-animate-input" id="streetaddress" name="entry.239179277" type="text" placeholder="Add Address Details" required name="Street Address" style="width:30%">
+      </div><br>
+    <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
+  </form>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='alert.html';}"></iframe>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.felixent.net" target="_blank">FELIXENT</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+<!-- Start form data
+
+Payment Date		  entry.555057248     (type-date)
+
+Client Name			  entry.877592081     (type-text)
+
+Loan Type			    entry.637343557     (type-text)
+
+Principal Amount	entry.645331653     (type-text)
+
+Interest Amount		entry.816020009     (type-text)
+
+Payment Amount		entry.1333980405    (type-text)
+
+Late Fees			    entry.615602859     (type-text)
+
+Remarks				    entry.1564132072    (type-text)
+
+Gender				    entry.1074821061    (type-select option)  [Male, Female, Prefer not to say]
+
+Martial Status		entry.1464926660    (type-select option)  [Married, Single, Divorced]
+
+Farther Name		  entry.1829703614    (type-text)
+
+N.R.C Number		  entry.2051444693    (type-text)
+
+Job Position		  entry.1516618909    (type-text)
+
+Division			    entry.877215295     (type-select option)  [Yangon, Mandalay, Bago, Naypyitaw]
+
+Township			    entry.853547901     (type-select option)  [Rangoon, N/Okkalapa, Bahan, Bago, Naypyitaw]
+
+Street Address		entry.239179277     (type-text)
+
+Phone Number		  entry.971201203     (type-text)
+
+End form data -->
