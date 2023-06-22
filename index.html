@@ -194,18 +194,19 @@ body {font-family: "Lato", sans-serif}
         <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@felixent.net<br>
       </div>
       <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScJnpnqbvl92Hp5q1FKBS24hahXEorvhsQjGycRCPUxv8ySow/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              <input class="w3-input w3-border" id="name" name="entry.376231371" type="text" placeholder="Name" required name="Name">
             </div>
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input class="w3-input w3-border" id="email" name="entry.1868527163" type="text" placeholder="Email" required name="Email">
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <input class="w3-input w3-border" id="message" name="entry.1589642644" type="text" placeholder="Message" required name="Message">
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='index.html#contact';}"></iframe>
       </div>
     </div>
   </div>
