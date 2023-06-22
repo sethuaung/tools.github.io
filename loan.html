@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- <link rel="stylesheet" href="css/loan.css"> -->
+<link rel="stylesheet" href="css/loan.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 <!-- Favicons -->
@@ -60,41 +60,36 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 <!-- Start Page content -->
-<div class="w3-content w3-padding-16" style="max-width:2000px;margin-top:46px">
-    <div class="w3-content w3-panel w3-card-4 w3-padding-8" style="width: 35%;">
-        <h2><b>Loan Calculator</b></h2>
-        <div class="w3-pink w3-round" style="height: 5px;width: 20%;"></div>
-        <!-- <span class="div-bar"></span> -->
-        <form action="" class="w3-container w3-padding-16">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <label class="w3-text-pink">Loan Amount (Ks.):</label>
-                <input type="number" class="w3-input w3-border w3-round-large" id="loan_amount">
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="wrapper">
+        <h2>Loan Calculator</h2>
+        <span class="div-bar"></span>
+        <div class="calculator">
+            <div class="calculator-input">
+                <label for="">Loan Amount (Ks.):</label>
+                <input type="number" id="loan_amount">
             </div>
-            <div class="w3-col m6">
-                <label class="w3-text-pink">Loan Tenure (Year.):</label>
-                <input type="number" class="w3-input w3-border w3-round-large" id="loan_tenure">
+            <div class="calculator-input">
+                <label for="">Loan Tenure (Year.):</label>
+                <input type="number" id="loan_tenure">
             </div>
-            <div class="w3-col m6">
-                <label class="w3-text-pink">Interest Rate (%):</label>
-                <input type="number" class="w3-input w3-border w3-round-large" id="loan_interest">
+            <div class="calculator-input">
+                <label for="">Interest Rate (%):</label>
+                <input type="number" id="loan_interest">
             </div>
-            <div class="w3-col m6">
-                <br>
-                
-                <button class="w3-btn w3-pink w3-round-large calculator-btn" style="width: 100%; height: 100%;"><b>CALCULATE</b></button>
+            <div class="calculator-input">
+                <button class="calculator-btn">Calculate</button>
             </div>
         </div>
-        </form>
 
         <div class="calculator-result">
             <!---Canvas-->
             <canvas id="loanChart"></canvas>
-            <ul class="w3-ul">
-                <li>Monthly Loan EMI: <b><span class="loan_emi w3-text-pink"></span></b></li>
-                <li>Principle Amount: <b><span class="loan_principle w3-text-grey"></span></b></li>
-                <li>Loan on Interest: <b><span class="loan_interest_rate w3-text-grey"></span></b></li>
-                <li>Total Amount to be paid: <b><span class="loan_total"></span></b></li>
+            <ul>
+                <li>Monthly Loan EMI: <span class="loan_emi"></span></li>
+                <li>Principle Amount: <span class="loan_principle"></span></li>
+                <li>Loan on Interest: <span class="loan_interest_rate"></span></li>
+                <li>Total Amount to be paid: <span class="loan_total"></span></li>
             </ul>
         </div>
     </div>
