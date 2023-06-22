@@ -59,95 +59,10 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<div class="w3-content" style="max-width:100%;margin-top:50px">
-    <div class="w3-content w3-card-4" style="width: 50%;">
-        <h1 class="w3-text-teal w3-center">Personal Informaiton</h1>
-        <div class="w3-container w3-card w3-white" id="menu">
-            <div class="w3-padding-16">
-              <div class="w3-center w3-card w3-white">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Personal');" id="myLink">
-                  <div class="w3-col s6 tablink w3-khaki">
-                    <h4 class="w3-padding-8">Personal Information</h4>
-                  </div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'Familyinfo');">
-                  <div class="w3-col s6 tablink w3-lime">
-                    <h4 class="w3-padding-8">Family Info</h4>
-                  </div>
-                </a>
-              </div>
-              <!-- Start Personal info -->
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPcFS8RyGXHU0w9mAi6SXF-Bwkoj5CeQP-QmnlNpCHQzvYA/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">    
-              <div id="Personal" class="w3-container w3-card w3-white menu w3-padding-4">
-                <div class="w3-row-padding w3-padding-16">
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Payment Date</b></label>
-                        <input class="w3-input w3-border" id="paymentdate" name="entry.555057248" type="date" placeholder="Date" required name="Payment Date">
-                    </div>
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Client Name</b></label>
-                        <input class="w3-input w3-border" id="clientname" name="entry.877592081" type="text" placeholder="Full Name" required name="Client Name">
-                    </div>
-                </div>
-                <div class="w3-row-padding w3-padding-16">
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Loan Type</b></label>
-                        <input class="w3-input w3-border" id="loantype" name="entry.637343557" type="text" placeholder="Loan Product Name" required name="Loan Type">
-                    </div>
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Principal</b></label>
-                        <input class="w3-input w3-border" id="principal" name="entry.645331653" type="text" placeholder="Principal" required name="Principal Amount">
-                    </div>
-                </div>
-                <div class="w3-row-padding w3-padding-16">
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Interest</b></label>
-                        <input class="w3-input w3-border" id="interest" name="entry.816020009" type="text" placeholder="Interest" required name="Interest Amount">
-                    </div>
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Late Amount</b></label>
-                        <input class="w3-input w3-border" id="latefees" name="entry.615602859" type="text" placeholder="Panalty" required name="Late Fees">
-                    </div>
-                </div>
-                <div class="w3-row-padding w3-padding-16">
-                    <div class="w3-col m6">
-                        <label for="date" class="w3-text-teal"><b>Remarks</b></label>
-                        <input class="w3-input w3-animate-input" id="remarks" name="entry.1564132072" type="text" placeholder="Other Remarks" required name="Remarks" style="width:30%">
-                    </div>
-                </div>
-              </div>
-              <!-- End Education -->
-              <!-- Start Qualifications -->
-              <div id="Familyinfo" class="w3-container w3-card w3-white menu w3-padding-16">
-                <div class="w3-row-padding w3-padding-16">
-                    <div class="w3-col m6">
-                        <label for="p" class="w3-text-teal"><b>Maritial Status</b></label>
-                        <select class="w3-select" id="maritalstatus" name="option">
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="entry.1464926660">Married</option>
-                            <option value="entry.1464926660">Single</option>
-                            <option value="entry.1464926660">Divorced</option>
-                        </select>
-                    </div>
-                    <div class="w3-col m6">
-                        <label for="p" class="w3-text-teal"><b>Street Address</b></label>
-                        <input class="w3-input w3-animate-input" id="streetaddress" name="entry.239179277" type="text" placeholder="Add Address Details" required name="Street Address" style="width:30%">
-                    </div>
-                </div>
-              </div>  
-             <!-- End Qualifications -->
-             <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
-            </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='clientdata.html';}"></iframe>
-            </div>
-          </div>
-    </div>
-</div>
-
 <!-- Start Page content -->
-<!-- <div class="w3-content" style="max-width:100%;margin-top:50px">
-  <div class="w3-card-4 w3-center">
-  <h1 class="w3-teal">Persoanl Information</h1>
+<div class="w3-content" style="max-width:100%;margin-top:50px">
+  
+  <h1>Persoanl Information</h1>
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPcFS8RyGXHU0w9mAi6SXF-Bwkoj5CeQP-QmnlNpCHQzvYA/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">
     <div class="w3-container w3-card-4 w3-light-grey">
       <div class="w3-third">
@@ -194,8 +109,8 @@ body {font-family: "Lato", sans-serif}
     <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
   </form>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='alert.html';}"></iframe>
+
 </div>
-</div> -->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -242,23 +157,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// Tabbed Menu
-function openMenu(evt, menuName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("menu");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-    }
-    document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-  }
-  document.getElementById("myLink").click();
-
 </script>
 
 </body>
