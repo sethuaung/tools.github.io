@@ -32,8 +32,8 @@ body, html {height: 100%}
        <div class="w3-jumbo w3-center"><img src="images/logo/favicon512x512.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top"></div><p></p>
     <form class="w3-container">
       <div class="w3-section">
-        <label>Username</label>
-        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+        <label for="usrname">Username</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" id="usrname">
         <label for="pswd">Password</label>
         <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Type Your Password" id="pswd">
         <input class="w3-button w3-block w3-green w3-section w3-padding" type="button" value="Login" onclick="checkPswd();" />
@@ -48,10 +48,18 @@ body, html {height: 100%}
     <!--Function to check password the already set password is admin-->
     <script type="text/javascript">
         function checkPswd() {
-            var confirmPassword = "fElixent@13337";
+            var username = document.getElementById("usrname").value;
             var password = document.getElementById("pswd").value;
-            if (password == confirmPassword) {
+            if (username == "root" && password == "root") {
                  window.location="indexM.html";
+            }
+            else if( username == "admin" && password == "admin") {
+                window.location="loginC.html";
+              // login user 2
+            }
+            else if( username == "admin1" && password == "admin1") {
+                window.location="loginM.html";
+              // login user 3
             }
             else{
                 alert("Passwords do not match.");

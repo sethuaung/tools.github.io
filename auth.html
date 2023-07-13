@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+</head>
+<body>
+    <form id="form">
+        <label>
+          Username:
+          <input type="text" id="username"/>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password"/>
+        </label>
+        
+        <button id="submit">Login</button>
+      </form>
+</body>
+<script>
+var attempt = 3; 
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "root" && password == "root"){ // here is password and username
+sweetAlert ("Login successfully");
+window.location = "success.html"; 
+return false;
+}
+else{
+attempt --;// Decrementing by one.
+sweetAlert("You have  "+attempt+" attempt(s) left.");
+// Disabling fields after 3 attempts.
+if( attempt == 0){
+sweetAlert("Oops...", "You have failed  to log in 3 times, Fields have been turned off. Please try again later", "error");
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+  </script>
+</html>
